@@ -1,4 +1,4 @@
-#Web Development Helper
+# Web Development Helper
 >jQuery plugin which is developed to help web designers configure their web design with minimal coding.
 
 For a working demo, please see [https://www.talkerland.com/webdevhelper](https://www.talkerland.com/webdevhelper/).
