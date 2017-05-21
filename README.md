@@ -1,7 +1,7 @@
 #Web Development Helper
 >jQuery plugin which is developed to help a web designer configure their web design with minimal coding.
 
-For a working demo, please see [https://www.talkerland.com](https://www.talkerland.com).
+For a working demo, please see [https://www.talkerland.com/webdevhelper](https://www.talkerland.com/webdevhelper/).
 
 ## Dependencies
 In order to use webDevHelper.js, jQuery library is required, and it is the only library, which you need to ensure to include. It has been tested with jQuery version 3.2.1.
