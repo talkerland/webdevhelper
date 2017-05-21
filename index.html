@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="Howard Chung" />
+    <meta name="description" content="Web Development Helper" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TalkerLand.Com: Web Development Helper</title>
+
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="assets/css/webDevHelper.css" />
+
+</head>
+<body>
+
+<header id="appHeaderContainer">
+    <h1>jQuery Web Development Helper</h1>
+    <h5>Function Demo: isStickyFooter()</h5>
+</header>
+
+<div id="appBodyContainer">
+    <br/>
+    <button id="addContent">Add Content</button> <button id="toggleOption"></button><br/>
+    <br/>
+    <p id="sentence1">
+        isStickyFooter() makes your footer section stick to the bottom of either the page or the browser window.<br/>
+        <br/>
+        For the demo purpose, you can add contents to the body section of this page by clicking on the "Add Content" button.<br/>
+        <br/>
+        You can also change the option. The default value is "true". <br/>
+        If you want to check the option behavior, you need to add contents to the bottom of pages until a vertical scrollbar gets appeared.<br/>
+        And the, toggle the option button.
+    </p>
+    <br/><br/>
+    <p id="sentence2">
+        For details, check the github repository. [<a href="https://github.com/talkerland/webdevhelper">https://github.com/talkerland/webdevhelper</a>]
+    </p>
+    <br/><br/>
+    01. Content<br/>
+    02. Content<br/>
+    03. Content<br/>
+    04. Content<br/>
+    05. Content<br/>
+    06. Content<br/>
+    07. Content<br/>
+    08. Content<br/>
+    09. Content<br/>
+    10. Content<br/>
+    11. Content
+</div>
+
+<footer id="appFooterContainer">
+    <h4>Footer Section</h4>
+    <h6>Developed By <a href="https://www.talkerland.com" target="_self">TalkerLand.Com</a></h6>
+</footer>
+
+
+</body>
+
+<!-- Library Javascript Scripts -->
+<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/webDevHelper.min.js"></script>
+
+<script>
+    function runStickyFooter(defaultOption) {
+        $("#appFooterContainer").isStickyFooter({
+            isStickyFooterFixed: defaultOption
+        });
+    }
+    $(document).ready(function(){
+
+        var count = 12;
+        var defaultOption = true;
+        var toggleButton = $('#toggleOption');
+
+        toggleButton.text('Toggle Option: ' + defaultOption);
+
+        runStickyFooter(defaultOption);
+
+        $('#addContent').on('click',function(){
+            $('#appBodyContainer').append("<br/>"+(count++)+". Content");
+            runStickyFooter(defaultOption);
+        });
+
+        toggleButton.on('click',function(){
+            defaultOption = !defaultOption;
+            toggleButton.text('Toggle Option: ' + defaultOption);
+            runStickyFooter(defaultOption);
+        });
+
+    });
+</script>
+
+</html>

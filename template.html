@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TITLE</title>
+
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="assets/css/webDevHelper.css" />
+
+</head>
+<body>
+
+<header id="appHeaderContainer">
+    <h1>Template</h1>
+    <h3>Header Section</h3>
+</header>
+
+<article id="appBodyContainer">
+    <h3>Body Section</h3>
+</article>
+
+<footer id="appFooterContainer">
+    <h3>Footer Section</h3>
+</footer>
+
+</body>
+
+<!-- Library Javascript Scripts -->
+<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/webDevHelper.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $("#appFooterContainer").isStickyFooter({
+            isStickyFooterFixed: true
+        });
+
+    });
+</script>
+
+</html>

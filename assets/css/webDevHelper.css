@@ -1,0 +1,21 @@
+@import url("../../vendor/normalize-css/normalize.css");
+
+html,body { font-size: 14px; border: 0; margin: 0; padding: 0; }
+h1 { font-size: 1.6rem; margin: 0; padding: 1rem; }
+h2 { font-size: 1.5rem; margin: 0; padding: 1rem; }
+h3 { font-size: 1.4rem; margin: 0; padding: 1rem; }
+h4 { font-size: 1.3rem; margin: 0; padding: 1rem; }
+h5 { font-size: 1.2rem; margin: 0; padding: 1rem; }
+h6 { font-size: 1.1rem; margin: 0; padding: 1rem; }
+
+#appHeaderContainer { background-color: #B2E1EA; text-align: center; }
+
+#appBodyContainer { background-color: aquamarine; text-align: center; }
+
+#appFooterContainer { background-color: #B2E1EA; text-align: center; }
+
+#sentence1, #sentence2 {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
