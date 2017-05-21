@@ -28,7 +28,7 @@ Add both jquery.min.js and webDevHelper.min.js after `</body>` or inside `<heade
 ## Usages
 webDevHelper.js currently supports following functions:
 
-    - `isStickyFooter()` - Turns a footer container sticky at the bottom.
+    * isStickyFooter() - Turns a footer container sticky at the bottom.
 
 Other functions will be added in the future.
 
