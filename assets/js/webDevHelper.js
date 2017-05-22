@@ -49,11 +49,11 @@
         // Get the window height.
         var windowHeight = $(window).innerHeight();
 
-        // Get the body height, including its margin.
-        var bodyHeight = body.outerHeight(true);
+        // Get the body height, excluding its margin.
+        var bodyHeight = body.outerHeight();
 
-        // Get the footer height, including its margin.
-        var footerHeight = footer.outerHeight(true);
+        // Get the footer height, excluding its margin.
+        var footerHeight = footer.outerHeight();
 
         // Estimate the total height of body contents.
         //
